@@ -1,0 +1,29 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: guestbook-simple
+  namespace: argocd
+spec:
+  generators:
+  - git:
+      repoURL: https://github.com/jessesuen/kargo-simple.git
+      revision: HEAD
+      directories:
+      - path: env/*
+  template:
+    metadata:
+      name: guestbook-simple-{{path.basename}}
+      annotations:
+        kargo.akuity.io/authorized-stage: kargo-simple:*
+    spec:
+      destination:
+        namespace: guestbook-simple
+        server: https://kubernetes.default.svc
+      project: guestbook-simple
+      source:
+        path: '{{path}}'
+        repoURL: https://github.com/jessesuen/kargo-simple.git
+        targetRevision: HEAD
+      syncPolicy:
+        syncOptions:
+          - CreateNamespace=true

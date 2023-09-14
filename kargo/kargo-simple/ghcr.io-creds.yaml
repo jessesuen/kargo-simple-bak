@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Secret
+type: Opaque
+metadata:
+  name: ghcr.io-creds
+  annotations:
+    kargo.akuity.io/authorized-projects: kargo-simple
+  labels:
+    kargo.akuity.io/secret-type: repository
+# stringData:
+#   type: git
+#   url: https://github.com/jessesuen/kargo-simple.git
+#   username: username
+#   password: github_pat_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

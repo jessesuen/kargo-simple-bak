@@ -1,0 +1,20 @@
+apiVersion: kargo.akuity.io/v1alpha1
+kind: Stage
+metadata:
+  name: staging
+  annotations:
+    kargo.akuity.io/color: amber
+spec:
+  subscriptions:
+    upstreamStages:
+      - name: dev
+  promotionMechanisms:
+    gitRepoUpdates:
+    - repoURL: https://github.com/jessesuen/kargo-simple.git
+      writeBranch: main
+      kustomize:
+        images:
+        - image: ghcr.io/jessesuen/guestbook
+          path: env/staging
+    argoCDAppUpdates:
+    - appName: guestbook-simple-staging
