@@ -12,7 +12,7 @@ spec:
   promotionMechanisms:
     gitRepoUpdates:
     - repoURL: https://github.com/jessesuen/kargo-simple.git
-      writeBranch: main
+      writeBranch: master
       kustomize:
         images:
         - image: ghcr.io/jessesuen/guestbook
