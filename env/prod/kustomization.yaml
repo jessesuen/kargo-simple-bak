@@ -9,4 +9,4 @@ namePrefix: prod-
 images:
 - name: ghcr.io/jessesuen/guestbook
   newName: ghcr.io/jessesuen/guestbook
-  newTag: v0.0.16
+  newTag: v0.0.13
