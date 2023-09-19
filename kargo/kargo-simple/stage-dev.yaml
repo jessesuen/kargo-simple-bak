@@ -19,11 +19,3 @@ spec:
           path: env/dev
     argoCDAppUpdates:
     - appName: guestbook-simple-dev
-
----
-apiVersion: kargo.akuity.io/v1alpha1
-kind: PromotionPolicy
-metadata:
-  name: dev
-stage: dev
-enableAutoPromotion: true
