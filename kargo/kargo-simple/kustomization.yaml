@@ -6,6 +6,7 @@ namespace: kargo-simple
 resources:
 - kargo-simple-ns.yaml
 - ghcr.io-creds.yaml
+- warehouse.yaml
 - stage-dev.yaml
 - stage-staging.yaml
 - stage-prod.yaml

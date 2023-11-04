@@ -6,9 +6,7 @@ metadata:
     kargo.akuity.io/color: red
 spec:
   subscriptions:
-    repos:
-      images:
-      - repoURL: ghcr.io/jessesuen/guestbook
+    warehouse: guestbook
   promotionMechanisms:
     gitRepoUpdates:
     - repoURL: https://github.com/jessesuen/kargo-simple.git
