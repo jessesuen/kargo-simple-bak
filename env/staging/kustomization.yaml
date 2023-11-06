@@ -9,4 +9,4 @@ namePrefix: staging-
 images:
 - name: ghcr.io/jessesuen/guestbook
   newName: ghcr.io/jessesuen/guestbook
-  newTag: v0.0.15
+  newTag: v0.0.19
