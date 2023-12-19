@@ -17,7 +17,7 @@ spec:
         kargo.akuity.io/authorized-stage: kargo-simple:*
     spec:
       destination:
-        namespace: guestbook-simple
+        namespace: guestbook-simple-{{path.basename}}
         server: https://kubernetes.default.svc
       project: guestbook-simple
       source:

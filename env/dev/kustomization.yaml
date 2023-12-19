@@ -4,7 +4,7 @@ kind: Kustomization
 resources:
 - ../../base
 
-namePrefix: dev-
+namespace: guestbook-simple-dev
 
 images:
 - name: ghcr.io/jessesuen/guestbook
