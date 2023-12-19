@@ -12,6 +12,7 @@ spec:
     gitRepoUpdates:
     - repoURL: https://github.com/jessesuen/kargo-simple.git
       writeBranch: master
+      pullRequest: {}
       kustomize:
         images:
         - image: ghcr.io/jessesuen/guestbook
