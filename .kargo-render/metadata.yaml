@@ -1,3 +1,3 @@
 imageSubstitutions:
-- ghcr.io/jessesuen/guestbook:v0.0.26
-sourceCommit: 38e9acb9ef5089ed5e6f866e1f5f2d65c6cabd3a
+- ghcr.io/jessesuen/guestbook:v0.0.47
+sourceCommit: 6cf9482571c058321dc7489af34b1b8577d920af
